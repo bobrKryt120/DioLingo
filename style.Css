@@ -256,7 +256,7 @@ body {
     color: #555; 
 }
 
-@media (orientation: portrait;) and (max-width: 450px) {
+@media (orientation: portrait) and (max-width: 450px) {
 .question{
   font-size: 50px;
 }
