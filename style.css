@@ -102,10 +102,11 @@ body {
 }
 
 .main-title { 
-    font-size: 90px; 
-    color: #fff; 
-    letter-spacing: 2px; 
-    text-shadow: 0 0 30px rgba(255,255,255,0.1); 
+   font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 128px;
+    color: #fff;
+    text-shadow: 0 0 250px 0 #fff, 0 0 10px 0 #ffaa39, 0 0 150px 0 #ff9200;
 }
 
 .btn-start {
