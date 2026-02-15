@@ -13,7 +13,8 @@ body {
 }
 
 .header {
-    
+    box-shadow: 0 0 200px 75px #000;
+    background: linear-gradient(135deg, #000 0%, #151515 100%);
 }
 
 .hero-section {
