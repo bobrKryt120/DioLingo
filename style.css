@@ -18,17 +18,32 @@ body {
 }
 
 .hero-section {
-    height: 160vh; 
-    background: repeating-linear-gradient(
-        -45deg,
-        #000 0px,
-        #000 25px,
-        #0d0d0d 25px,
-        #0d0d0d 50px
-    );
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    background: #121212;     
+    background: linear-gradient(            
+        135deg,            
+        #121212 25%,            
+        #1a1a1a 25%,            
+        #1a1a1a 50%,            
+        #121212 50%,     
+        #121212 75%,         
+        #1a1a1a 75%,             
+        #1a1a1a        
+    );        
+    background-size: 40px 40px;     
+    animation: move 8s linear infinite;        
+    }            
+    @keyframes move {    
+        0% {            
+            background-position: 0 0;        
+        }      
+        100%  {            
+            background-position: 40px 40px;  }       
+    }
 }
 
 .navbar { 
