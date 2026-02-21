@@ -215,27 +215,26 @@ body {
 
 
 .card {
-    background: #111; 
-    padding: 25px;
-    border-radius: 30px;
-    border: 2px solid #FF9200; 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 0 100px 0 #fff, 0 0 25px 0 #ffaa39;
+    background: linear-gradient(45deg, #ff9200 0%, #c57100 40.38%, #ffbc63 63.46%, #feab3d 100%);
+    border-radius: 32px;
+    min-width: 450px;
+    min-height: 480px;
 }
 
 .card-title { 
-    color: #FF9200; 
-    font-size: 20px; 
-    font-weight: bold; 
-    margin-bottom: 20px; 
+    font-family: work sans;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
 }
 
 
 .inner-display { 
-    background: #000000; 
-    height: 380px; 
-    border-radius: 20px; 
-    border: 1px solid #222; 
-    box-shadow: inset 0 0 15px rgba(255, 146, 0, 0.05);
+    border-radius: 32px;
+    width: 442px;
+    height: 389px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #252525 49.52%, #2e2e2e 100%);
 }
 
 .card-row { 
