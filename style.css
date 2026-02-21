@@ -232,8 +232,8 @@ body {
 
 .inner-display { 
     border-radius: 32px;
-    width: 442px;
-    height: 389px;
+    min-width: 442px;
+    min-height: 389px;
     background: linear-gradient(180deg, #1a1a1a 0%, #252525 49.52%, #2e2e2e 100%);
 }
 
