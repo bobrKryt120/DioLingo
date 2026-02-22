@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    --s: 37px;
+    --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+        var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+        var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 200px 75px #151515;
+    background: linear-gradient(90deg, #151515 0%, #202020 100%);
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 26px 0 26px;
+}
+
+.title_article {
+    border: 1px solid #252525;
+    border-radius: 15px;
+    width: 808px;
+    height: 188px;
+    background: #151515;
+    display: flex;
+    justify-content:
+}
+
+.stick {
+    border-radius: 5px;
+    width: 9px;
+    height: 132px;
+    background: linear-gradient(180deg, #ffbc63 0%, #ff9200 50%, #c57100 100%);
+}
+
+.title_div {
+    width: 748px;
+    height: 99px;
+}
