@@ -53,6 +53,7 @@ nav {
     position: sticky;
     top: 80px;
     z-index: 4;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .stick {
@@ -73,7 +74,7 @@ nav {
 
 .title_div h1 {
     font-family: work sans;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 36px;
     color: #ffaa39;
     margin-bottom: -3px;
@@ -81,7 +82,7 @@ nav {
 
 .title_div h2 {
     font-family: work sans;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     color: #99999d;
     margin-top: -3px;
@@ -102,10 +103,15 @@ main {
 }
 
 .dorozka {
-    width: 274px;
+    width: 100%;
     height: 2076px;
     display: flex;
     flex-direction: column;
+}
+
+.glist {
+    width: 274px;
+    height: 2076px;
 }
 
 .unit_div {
@@ -116,22 +122,35 @@ main {
     height: 2076px;
 }
 
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first:hover > .side_comment:not(:hover) {
+    display: block;
+    transition: 0.25s;
+}
+
 .lesson_button1 {
     width: 170px;
     height: 170px;
     font-family: work sans;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 76px;
     text-align: center;
     color: #fff;
     border-radius: 100%;
     background: linear-gradient(135deg, #ff9200 0%, #ffbc63 100%);
     box-shadow: inset 0 -8px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 8px rgba(0, 0, 0, 0.31), 0 0 175px 0 #fff;
+    text-shadow: 0 0 5px #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
     transition: 0.25s;
+    position: relative;
 }
 
 .lesson_button1:hover {
@@ -143,25 +162,85 @@ main {
     transition: 0.25s;
 }
 
+.lesson_button1:active {
+    top: 2px;
+    box-shadow: inset 0 -4px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 4px rgba(0, 0, 0, 0.31), 0 0 150px 0 #fff;
+    transition: 0.25s;
+}
+
 .lesson_button1 p {
     text-shadow: 0 0 5px 0 #ffffff;
+}
+
+.side_comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 335px;
+    margin-left: 75px;
+    display: none;
+    transition: 0.25s;
+}
+
+.side_comment::after {
+    display: block;
+    content: url("https://learn.logikaschool.com/uploads/student/5102028/69a9d5f0a1b3a.png");
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 465px;
+    top: 145px;
+}
+
+.side_comment h3 {
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 28px;
+    color: #ffaa39;
+}
+
+.side_comment p {
+    margin-top: -30px;
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #99999d;
 }
 
 .lesson_button2, .lesson_button3, .lesson_button4, .lesson_button5 {
     width: 175px;
     height: 175px;
     font-family: work sans;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 76px;
     text-align: center;
     color: #838383;
     border-radius: 100%;
     background: linear-gradient(135deg, #2e2e2e 0%, #505050 100%);
     box-shadow: inset 0 -12px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 12px rgba(0, 0, 0, 0.31), 0 0 250px 0 #adadad;
+    text-shadow: 0 0 5px #bab9b9;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
+    position: relative;
+}
+
+.lesson_button2 {
+    right: 40px;
+}
+
+.lesson_button3 {
+    right: -50px;
+}
+
+.lesson_button4 {
+    right: -150px;
+}
+
+.lesson_button5 {
+    right: -100px;
 }
 
 .lesson_button p {
@@ -183,4 +262,102 @@ main {
 .border {
     margin: 175px 0 175px 0;
     width: 100%;
+}
+
+footer {
+    box-shadow: 0 0 200px 75px #151515;
+    background: linear-gradient(90deg, #151515 0%, #202020 100%);
+    width: 100%;
+    min-height: 382px;
+    position: relative;
+    top: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.footer_div_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text p {
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+}
+
+.best_team {
+    background: linear-gradient(90deg, #ffaa39 0%, #b26600 39.9%, #ffbc63 58.65%, #feab3d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.namely {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 32px;
+}
+
+.namely p {
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 14px;
+    background: linear-gradient(90deg, #ffaa39 0%, #b26600 39.9%, #ffbc63 58.17%, #feab3d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.25s;
+}
+
+.namely p:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+    transition: 0.25s;
+}
+
+.footer_div_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_div_right p {
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer_div_right img {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.footer_div_right img:hover {
+    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.25), 0 0 10px 5px rgba(255, 255, 255, 0.25);
+    transition: 0.25s;
+}
+
+.footer_div_right img:active {
+    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(255, 255, 255, 0.25)
 }
