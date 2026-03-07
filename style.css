@@ -297,7 +297,7 @@ body {
 }
 
 .Kaz-box img {
-    width: 20px;   /* регулюй розмір */
+    width: 20px;   
     height: 20px;
     object-fit: contain;
 }
