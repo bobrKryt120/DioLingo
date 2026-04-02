@@ -1,14 +1,14 @@
-# DioLingo
+# DioLingo0
 Eine Webseite zum Sprachenlernen
 
-  Нікіта:
+  Нікіта :
   CSS
 
-  Артем:
+  Артем : 
   Макет, Js
 
-  Андрій:
+  Андрій :
   HTML
 
-  Ярік:
+  Ярік :
   CSS
