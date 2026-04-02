@@ -53,7 +53,7 @@ nav {
 .white_bulb2 {
     top: 800px;
     left: 100px;
-    animation: bulb_move2 16s linear infinite;
+    animation: bulb_move1 16s linear infinite;
 }
 
 .white_bulb3 {
@@ -65,7 +65,7 @@ nav {
 .white_bulb4 {
     top: 1500px;
     left: 70px;
-    animation: bulb_move2 16s linear infinite;
+    animation: bulb_move1 16s linear infinite;
 }
 
 .white_bulb5 {
@@ -77,7 +77,7 @@ nav {
 .white_bulb6 {
     top: 2300px;
     left: 70px;
-    animation: bulb_move2 16s linear infinite;
+    animation: bulb_move1 16s linear infinite;
 }
 
 .white_bulb7 {
@@ -89,7 +89,7 @@ nav {
 .white_bulb8 {
     top: 3100px;
     left: 50px;
-    animation: bulb_move2 16s linear infinite;
+    animation: bulb_move1 16s linear infinite;
 }
 
 .white_bulb9 {
@@ -156,6 +156,102 @@ nav {
 .orange_bulb7 {
     top: 3350px;
     left: 300px;
+}
+
+.commisions_aside {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-center: center;
+    z-index: 6;
+}
+
+.commisions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.commision {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #1a1a1a 0%, #252525 50%, #2e2e2e 100%);
+}
+
+.comm_name {
+    font-family: work sans;
+    font-weight: 500;
+    font-size: 18px;
+    color: #bab9b9;
+}
+
+.comm_price {
+    font-family: work sans;
+    font-weight: 400;
+    font-size: 12px;
+    color: #838383;
+}
+
+.comm_price span {
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 36px;
+    color: #fff;
+}
+
+.comm_desc {
+    font-family: work sans;
+    font-weight: 400;
+    font-size: 12px;
+    color: #838383;
+}
+
+.batton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.6);
+    background: linear-gradient(1deg, #ff9200 0%, #c57100 40%, #ffb95b 65%, #ffaa39 100%);
+    border-radius: 8px;
+    width: 216px;
+    height: 30px;
+    font-family: work sans;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.commision_sp {
+    background: linear-gradient(43deg, #ff9200 0%, #c57100 40%, #ffbc63 62.98%, #ffaa39 100%);
+    border-radius: 32px;
+    padding: 4px;
+}
+
+.comm_sp_p {
+    margin-left: 18px;
+    font-family: work sans;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.button_ {
+    box-shadow: 0 0 100px 1px #fff, 0 0 15px 1px #ffaa39;
+    background: linear-gradient(1deg, #ff9200 0%, #c57100 40%, #ffb95b 65%, #ffaa39 100%);
+    border-radius: 8px;
+    width: 270px;
+    height: 50px;
+    font-family: work sans;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 main {
