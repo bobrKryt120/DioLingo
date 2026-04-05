@@ -162,16 +162,24 @@ nav {
     position: fixed;
     display: flex;
     width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-center: center;
+    justify-content: center;
     z-index: 6;
+}
+
+.back_but {
+    position: absolute;
+    top: 100px;
+    right: 500px;
 }
 
 .commisions {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    width: 60%;
 }
 
 .commision {
@@ -181,6 +189,11 @@ nav {
     padding: 18px;
     border-radius: 30px;
     background: linear-gradient(180deg, #1a1a1a 0%, #252525 50%, #2e2e2e 100%);
+    z-index: 4;
+}
+
+.commision_sp {
+    margin-top: -42px;
 }
 
 .comm_name {
@@ -188,6 +201,7 @@ nav {
     font-weight: 500;
     font-size: 18px;
     color: #bab9b9;
+    margin-top: -15px;
 }
 
 .comm_price {
@@ -195,6 +209,7 @@ nav {
     font-weight: 400;
     font-size: 12px;
     color: #838383;
+    margin-top: -15px;
 }
 
 .comm_price span {
@@ -209,6 +224,8 @@ nav {
     font-weight: 400;
     font-size: 12px;
     color: #838383;
+    height: 28px;
+    margin-top: -15px;
 }
 
 .batton {
@@ -225,6 +242,20 @@ nav {
     font-size: 12px;
     text-align: center;
     color: #fff;
+    margin-top: 15px;
+    transition: 0.25s;
+}
+
+.batton:hover {
+    transform: scale(1.03);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.6), 0 0 5px 0 rgba(255, 255, 255, 0.5), 0 0 3px 0 #ff9200;
+    text-shadow: 0 0 5px #fff;
+    transition: 0.25s;
+}
+
+.batton:active {
+    transform: scale(1.01);
+    box-shadow: inset 0 2px 4px 0 rgba(255, 255, 255, 0.6), 0 0 3px 0 rgba(255, 255, 255, 0.5), 0 0 1px 0 #ff9200;
 }
 
 .commision_sp {
@@ -250,8 +281,29 @@ nav {
     font-family: work sans;
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     color: #fff;
+    transition: 0.25s;
+    margin-top: 50px;
+    z-index: 3;
+}
+
+.button_:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+    box-shadow: 0 0 150px 1px #fff, 0 0 30px 1px #ffaa39;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.75);
+}
+
+.button_:active {
+    transform: scale(1.05);
+    margin-top: 52px;
+    box-shadow: 0 0 125px 1px #fff, 0 0 15px 1px #ffaa39;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.75);
+
 }
 
 main {
@@ -260,6 +312,7 @@ main {
     align-items: center;
     position: relative;
     top: 75px;
+    filter: blur(5px);
 }
 
 .sec1 {
