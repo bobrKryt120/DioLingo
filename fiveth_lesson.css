@@ -94,7 +94,7 @@ main {
 }
 
 
-.selected-are { border-color: orange !important; color: orange !important; }
+.selected-are { border-color: #ff4d4d !important; color: #ff4d4d !important; }
 .selected-is { border-color: #ff4d4d !important; color: #ff4d4d !important; }
 .selected-am { border-color: #4caf50 !important; color: #4caf50 !important; }
 
