@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
        
         if (btn.id === 'btn-He') {
             btn.classList.add('selected-He');
-            gap.style.color = 'orange';
+            gap.style.color = '#ff4d4d';
         } else if (btn.id === 'btn-I') {
             btn.classList.add('selected-I');
             gap.style.color = '#ff4d4d';
