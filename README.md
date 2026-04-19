@@ -1,4 +1,4 @@
-# DioLingo0
+# DioLingo
 Eine Webseite zum Sprachenlernen
 
   Нікіта :
