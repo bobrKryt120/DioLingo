@@ -13,7 +13,7 @@ header {
     background: linear-gradient(90deg, #151515 0%, #202020 100%);
     display: flex;
     align-items: center;
-    z-index: 4;
+    z-index: 5;
 }
 
 nav {
@@ -30,16 +30,17 @@ nav {
 }
 
 .burger_menu {
-    width: 30px;
-    height: 35px;
+    transition: 0.25s;
 }
 
 .burger_menu:hover {
-    content: url("https://learn.logikaschool.com/uploads/student/5102028/69aaa7af8b16e.png");
-    width: 35px;
-    height: 40px;
+    transform: scale(1.08);
+    transition: 0.25s;
 }
 
+.burger_menu:active {
+    transform: scale(1.05);
+}
 
 
 .hotbar {
@@ -77,6 +78,10 @@ main {
     font-weight: 300;
     font-size: 28px;
     color: #ffaa39;
+}
+
+.ita {
+    font-style: italic;
 }
 
 .task p {
