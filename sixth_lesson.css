@@ -122,4 +122,8 @@ footer {
     width: 16%;
 }
 
-
+.lost-life {
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: 0.5s;
+}
