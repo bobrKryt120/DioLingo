@@ -1,9 +1,10 @@
 body {
     margin: 0;
     width: 100%;
-    height: 100%;
-    background: radial-gradient(50% 34.55% at 54.01% 50%, #2e2e2e 0%, #252525 99.99%);
-    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+    height: 602px;
+    background: #252525;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
 }
 
 header {
@@ -61,21 +62,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
+    justify-content: center;
+    height: calc(100vh - 110px);
 }
 
 .task_area {
     background: #202020;
     border-radius: 15px;
     width: 652px;
-    height: 335px;
+    height: 235px;
     padding: 30px 25px 30px 25px;
 }
 
 .task_title h1 {
     font-family: work sans;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 28px;
     color: #ffaa39;
 }
@@ -84,13 +85,33 @@ main {
     font-style: italic;
 }
 
+.itaor {
+    font-style: italic;
+    color: #ffaa39;
+}
+
+.or {
+    color: #ffaa39;
+}
+
+.ora {
+    color: #ffaa39;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.oran {
+    color: #ffaa39;
+    margin-right: 8px;
+}
+
 .task p {
     font-family: work sans;
     font-weight: 300;
     font-size: 20px;
-    color: #99999d;
     border-radius: 50px;
     height: 30px;
+    color: #99999d;
     background: #2e2e2e;
     display: flex;
     align-items: center;
@@ -152,9 +173,7 @@ footer {
     width: 16%;
 }
 
-
-
-.task3, .task4, .task5, .task6 {
+ .task3, .task4, .task5, .task6 {
     background-color: #2e2e2e;
     height: 25px;
     width: 16%;
