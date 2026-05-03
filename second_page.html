@@ -1,456 +1,148 @@
-body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    --s: 37px;
-    --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
-    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
-    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
-    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
-    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
-        var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
-        var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
-    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="second_page.css"/>
+    <title>User</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="peach">
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69a2fbf6e5df4.png"/>
+            </div>
+            <div class="burger_menu">
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69a2fc2f62f92.png"/>
+            </div>
+        </nav>
+    </header>
+    <aside class="menu">
+        <div class="buttons">
+            <div class="button">
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69ac56e004311.png"/>
+                <p>Switch language</p>
+            </div>
+            <div class="button">
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69ac1da659f12.png"/>
+                <p>Settings</p>
+            </div>
+            <div class="button">
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69ac58829568a.png"/>
+                <p>Log in</p>
+            </div>
+        </div>
+        <div class="s_button">
+            <div class="sbutton">
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69ac1dc7c03d9.png"/>
+                <p>Team Access</p>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="first_unit">
+            <article class="title_article">
+                <div class="stick">
 
-* {
-    user-select: none;
-}
+                </div>
+                <div class="title_div">
+                    <h1>1 Section 1 Unit</h1>
+                    <h2>Itroduction</h2>
+                </div>
+            </article>
+            <article class="unit_article">
+                <div class="dorozka">
+                    <img class="glist" src="https://learn.logikaschool.com/uploads/student/5102028/699ad477442f4.png"/>
+                    <div class="unit_div">
+                        <div class="first">
+                            <div class="lesson_button1">
+                                <p>1</p>
+                            </div>
+                            <div class="side_comment">
+                                <h3>1 lesson</h3>
+                                <p>Hello user! <br/>Click on the button to start<br/> the lesson</p>
+                            </div>
+                        </div>
+                        <div class="lesson_button2">
+                            <img src="https://learn.logikaschool.com/uploads/student/5102028/699ad5e762773.png"/>
+                        </div>
+                        <div class="lesson_button3">
+                            <img src="https://learn.logikaschool.com/uploads/student/5102028/699ad62867276.png"/>
+                        </div>
+                        <div class="lesson_button4">
+                            <p>3</p>
+                        </div>
+                        <div class="lesson_button5">
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last_lesson_button">
+                    <img src="https://learn.logikaschool.com/uploads/student/5102028/699ad6855cf26.png"/>
+                </div>
+            </article>
+        </section>
+        <img class="border" src="https://learn.logikaschool.com/uploads/student/5102028/69a41291cabed.png"/>
+        <section class="second_unit">
+            <article class="title_article">
+                <div class="stick1">
 
-header {
-    width: 100%;
-    height: 75px;
-    box-shadow: 0 0 200px 75px #000;
-    background: linear-gradient(90deg, #151515 0%, #202020 100%);
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 5;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 21px 0 21px;
-}
-
-.peach {
-    width: 37px;
-    height: 37px;
-}
-
-.burger_menu {
-    transition: 0.25s;
-}
-
-.burger_menu:hover {
-    transform: scale(1.08);
-    transition: 0.25s;
-}
-
-.burger_menu:active {
-    transform: scale(1.05);
-}
-
-.menu {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    z-index: 5;
-    border-radius: 10px;
-    padding: 12px;
-    background: linear-gradient(136deg, #2e2e2e 0%, #1a1a1a 100%);
-    top: 90px;
-    left: 86.5%;
-    opacity: 0;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-bottom: 1px solid #42434a;
-}
-
-.button, .sbutton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: no-wrap;
-    height: 27px;
-}
-
-.button img, .sbutton img {
-    width: 19px;
-    height: 19px;
-    margin-right: 12px;
-    transition: 0.25s;
-}
-
-.button p {
-    font-family: work sans;
-    font-weight: 400;
-    font-size: 16px;
-    color: #7e8590;
-}
-
-.sbutton p {
-    font-family: work sans;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ff9200;
-    transition: 0.25s;
-}
-
-.button:hover p {
-    text-shadow: 0 0 10px #ffffff;
-    transition: 0.25s;
-}
-
-.sbutton:hover p {
-    text-shadow: 0 0 10px #ff9200;
-    transition: 0.25s;
-}
-
-.title_article {
-    border: 1px solid #252525;
-    border-radius: 15px;
-    width: 606px;
-    height: 141px;
-    background: #151515;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: sticky;
-    top: 80px;
-    z-index: 5;
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
-}
-
-.stick {
-    border-radius: 5px;
-    width: 7px;
-    height: 99px;
-    background: linear-gradient(180deg, #ffbc63 0%, #ff9200 50%, #c57100 100%);
-    margin: 0 15px 0 19px;
-}
-
-.stick1 {
-    background: linear-gradient(180deg, #505050 0%, #42434a 50%, #2e2e2e 100%);;
-    margin: 0 15px 0 19px;
-    border-radius: 5px;
-    width: 7px;
-    height: 99px;
-}
-
-.title_div {
-    width: 561px;
-    height: 74px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.title_div h1 {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 36px;
-    color: #ffaa39;
-    margin-bottom: -3px;
-}
-
-.title_div2 h1 {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 36px;
-    color: #42434A;
-    margin-bottom: -3px;
-}
-
-.title_div h2, .title_div2 h2 {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 24px;
-    color: #99999d;
-    margin-top: -3px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 75px;
-}
-
-.unit_article {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.dorozka {
-    width: 100%;
-    height: 2076px;
-    display: flex;
-    flex-direction: column;
-}
-
-.glist {
-    width: 274px;
-    height: 2076px;
-}
-
-.unit_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    height: 2076px;
-}
-
-.first {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.first:hover > .side_comment:not(:hover) {
-    display: block;
-    transition: 0.25s;
-}
-
-.lesson_button1 {
-    width: 170px;
-    height: 170px;
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 76px;
-    text-align: center;
-    color: #fff;
-    border-radius: 100%;
-    background: linear-gradient(135deg, #ff9200 0%, #ffbc63 100%);
-    box-shadow: inset 0 -8px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 8px rgba(0, 0, 0, 0.31), 0 0 175px 0 #fff;
-    text-shadow: 0 0 5px #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    transition: 0.25s;
-    position: relative;
-}
-
-.lesson_button1:hover {
-    width: 175px;
-    height: 175px;
-    font-size: 76px;
-    background: linear-gradient(135deg, #ff9200 0%, #ffbc63 100%);
-    box-shadow: inset 0 -12px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 12px rgba(0, 0, 0, 0.31), 0 0 250px 0 #fff;
-    transition: 0.25s;
-}
-
-.lesson_button1:active {
-    top: 2px;
-    box-shadow: inset 0 -4px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 4px rgba(0, 0, 0, 0.31), 0 0 150px 0 #fff;
-    transition: 0.25s;
-}
-
-.lesson_button1 p {
-    text-shadow: 0 0 5px 0 #ffffff;
-}
-
-.side_comment {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 335px;
-    margin-left: 75px;
-    display: none;
-    transition: 0.25s;
-}
-
-.side_comment::after {
-    display: block;
-    content: url("https://learn.logikaschool.com/uploads/student/5102028/69a9d5f0a1b3a.png");
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 465px;
-    top: 145px;
-}
-
-.side_comment h3 {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 28px;
-    color: #ffaa39;
-}
-
-.side_comment p {
-    margin-top: -30px;
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 150%;
-    color: #99999d;
-}
-
-.lesson_button2, .lesson_button3, .lesson_button4, .lesson_button5, .lesson_button6 {
-    width: 175px;
-    height: 175px;
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 76px;
-    text-align: center;
-    color: #838383;
-    border-radius: 100%;
-    background: linear-gradient(135deg, #2e2e2e 0%, #505050 100%);
-    box-shadow: inset 0 -12px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 12px rgba(0, 0, 0, 0.31), 0 0 250px 0 #adadad;
-    text-shadow: 0 0 5px #bab9b9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    position: relative;
-}
-
-.lesson_button2 {
-    right: 40px;
-}
-
-.lesson_button3 {
-    right: -50px;
-}
-
-.lesson_button4 {
-    right: -150px;
-}
-
-.lesson_button5 {
-    right: -100px;
-}
-
-.lesson_button6 {
-    right: 15px;
-}
-
-.lesson_button p {
-    text-shadow: 0 0 5px 0 #bab9b9;
-}
-
-.last_lesson_button {
-    border-radius: 100%;
-    background: linear-gradient(135deg, #2e2e2e 0%, #505050 100%);
-    box-shadow: inset 0 -12px 1px 0 rgba(0, 0, 0, 0.31), 0 0 1px 12px rgba(0, 0, 0, 0.31), 0 0 250px 0 #adadad;
-    width: 175px;
-    height: 175px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 125px;
-}
-
-.border {
-    margin: 175px 0 175px 0;
-    width: 100%;
-}
-
-footer {
-    box-shadow: 0 0 200px 75px #151515;
-    background: linear-gradient(90deg, #151515 0%, #202020 100%);
-    width: 100%;
-    min-height: 382px;
-    position: relative;
-    top: 400px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer_article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-}
-
-.footer_div_left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.text p {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 14px;
-    color: #fff;
-}
-
-.best_team {
-    background: linear-gradient(90deg, #ffaa39 0%, #b26600 39.9%, #ffbc63 58.65%, #feab3d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.namely {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 32px;
-}
-
-.namely p {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 14px;
-    background: linear-gradient(90deg, #ffaa39 0%, #b26600 39.9%, #ffbc63 58.17%, #feab3d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.25s;
-}
-
-.namely p:hover {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
-    transition: 0.25s;
-}
-
-.footer_div_right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer_div_right p {
-    font-family: work sans;
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-    color: #fff;
-}
-
-.footer_div_right img {
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    transition: 0.25s;
-}
-
-.footer_div_right img:hover {
-    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.25), 0 0 10px 5px rgba(255, 255, 255, 0.25);
-    transition: 0.25s;
-}
-
-.footer_div_right img:active {
-    box-shadow: 0 0 0 7px rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(255, 255, 255, 0.25)
-}
+                </div>
+                <div class="title_div2">
+                    <h1>1 Section 2 Unit</h1>
+                    <h2>Foundations</h2>
+                </div>
+            </article>
+            <article class="unit_article">
+                <div class="dorozka">
+                    <img class="glist" src="https://learn.logikaschool.com/uploads/student/5102028/699ad477442f4.png"/>
+                    <div class="unit_div">
+                        <div class="lesson_button6">
+                            <p>1</p>
+                        </div>
+                        <div class="lesson_button2">
+                            <img src="https://learn.logikaschool.com/uploads/student/5102028/699ad5e762773.png"/>
+                        </div>
+                        <div class="lesson_button3">
+                            <img src="https://learn.logikaschool.com/uploads/student/5102028/699ad62867276.png"/>
+                        </div>
+                        <div class="lesson_button4">
+                            <p>3</p>
+                        </div>
+                        <div class="lesson_button5">
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="last_lesson_button">
+                    <img src="https://learn.logikaschool.com/uploads/student/5102028/699ad6855cf26.png"/>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <article class="footer_article">
+            <div class="footer_div_left">
+                <div class="text">
+                    <p>Created by <span class="best_team">Team Right</span></p>
+                    <p>namely:</p>
+                </div>
+                <div class="namely">
+                    <p>Артем - design</p>
+                    <p>Андрій - HTML</p>
+                    <p>Ярік, Нікіта - CSS</p>
+                    <p>Артем - JS</p>
+                </div>
+            </div>
+            <div class="footer_div_right">
+                <p>Follow <br/>us on</p>
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69a9b483f2ce1.png"/>
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69a9b53f37d58.png"/>
+                <img src="https://learn.logikaschool.com/uploads/student/5102028/69a9b5711f3ba.png"/>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>
