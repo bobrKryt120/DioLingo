@@ -12,3 +12,5 @@ Eine Webseite zum Sprachenlernen
 
   Ярік  :
   CSS
+
+https://bobrkryt120.github.io/DioLingo/first_page
