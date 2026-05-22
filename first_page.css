@@ -712,10 +712,15 @@ main {
     height: 389px;
 }
 
-.sec3_divs .background_div div img {
+.sec3_divs .background_div div #img {
     width: 550px;
     margin-top: -50px;
     margin-left: -50px;
+}
+
+.sec3_divs .background_div div #img2 {
+    width: 442px;
+    margin-top: -120px;
 }
 
 footer {
